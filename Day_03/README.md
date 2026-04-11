@@ -5,7 +5,7 @@ On Day 3 of my #100DaysOfCode challenge, I built a **Treasure Island** game.
 
 This project focuses on using **control flow** and **logical operators** to create an interactive text-based game.
 
-## Concepts covered in this project:
+## 📚 Concepts covered in this project:
 - Control Flow with if / else and Conditional Operators
 - Modulo Operator
 - Nested if statements and elif statements

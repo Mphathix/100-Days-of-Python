@@ -5,7 +5,7 @@ On Day 1 of my #100DaysOfCode challenge, I built a **Band Name Generator**.
 
 This project focuses on understanding **variables** and how to manage data in Python.
 
-## Concepts covered in this project:
+## 📚 Concepts covered in this project:
 - Printing to the Console in Python
 - String Manipulation and Code Intelligence
 - Debugging

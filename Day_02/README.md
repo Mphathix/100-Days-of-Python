@@ -4,7 +4,7 @@
 On Day 2 of my #100DaysOfCode challenge, I built a **Tip Calculator** using Python.
 This project focuses on understanding **data types** and how to manipulate strings in Python.
 
-## Concepts covered in this project:
+## 📚 Concepts covered in this project:
 - Python Primitive Data Types
 - Type Error, Type Checking and Type Conversion
 - Data Types
