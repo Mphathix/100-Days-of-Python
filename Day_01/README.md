@@ -1,4 +1,4 @@
-# Day 1 - Working with Variables in Python to Manage Data
+# 📅 Day 1 - Working with Variables in Python to Manage Data
 
 ## 🚀 Overview
 On Day 1 of my #100DaysOfCode challenge, I built a **Band Name Generator**.

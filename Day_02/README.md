@@ -1,4 +1,4 @@
-# Day 2 - Understanding Data Types and How to Manipulate Strings
+# 📅 Day 2 - Understanding Data Types and How to Manipulate Strings
 
 ## 🚀 Overview
 On Day 2 of my #100DaysOfCode challenge, I built a **Tip Calculator** using Python.
