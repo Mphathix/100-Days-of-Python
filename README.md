@@ -26,6 +26,7 @@ Most of my projects follow along with:
 - [Day 02:](./Day_02) Understanding Data Types and How to Manipulate Strings
 - [Day 03:](./Day_03) Control Flow and Logical Operators
 - [Day 04:](./Day_04) Randomisation and Python Lists
+- [Day 05:](./Day_05) Python Loops and Password Generator
 - 🔜 More days coming...
 
 ---
