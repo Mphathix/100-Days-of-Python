@@ -31,7 +31,7 @@ art = [rock, paper, scissors]
 player_choice = int(input("Choose 0 for rock,1 for paper or 2 for scissors: "))
 computer_choice = random.randint(0, 2)
 
-if 0 > player_choice or player_choice > 2:
+if player_choice < 0 or player_choice > 2:
     print("⚠ Invalid input, please enter a number between 0 and 2")
 
 else:
@@ -52,8 +52,6 @@ else:
 
     elif player_choice == 2 and computer_choice == 1:
         print("You Won🏆")
-    elif player_choice >= 3:
-        print("Enter a valid number")
 
     else:
         print("You lose😢")
