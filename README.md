@@ -27,6 +27,7 @@ Most of my projects follow along with:
 - [Day 03:](./Day_03) Control Flow and Logical Operators
 - [Day 04:](./Day_04) Randomisation and Python Lists
 - [Day 05:](./Day_05) Python Loops and Password Generator
+- [Day 06:](./Day_06) Python Functions and Control Flow
 - 🔜 More days coming...
 
 ---
