@@ -31,7 +31,8 @@ python Day_07/main.py
 
 The game chooses a word from a small fruit-themed word list. Enter one
 alphabetic letter per turn. Repeated guesses and invalid input do not cost a
-life, while incorrect guesses reduce the six available lives.
+life, while incorrect guesses reduce the six available lives. Each incorrect
+guess also reveals the next non-graphic ASCII gallows stage.
 
 ## 💻 Code
 ### [View Code](main.py)

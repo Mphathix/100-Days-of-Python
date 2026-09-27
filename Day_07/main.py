@@ -15,6 +15,71 @@ WORD_LIST: tuple[str, ...] = (
     "blueberry",
 )
 STARTING_LIVES = 6
+HANGMAN_STAGES: tuple[str, ...] = (
+    r"""
+     +---+
+     |   |
+         |
+         |
+         |
+         |
+    =======
+    """,
+    r"""
+     +---+
+     |   |
+     O   |
+         |
+         |
+         |
+    =======
+    """,
+    r"""
+     +---+
+     |   |
+     O   |
+     |   |
+         |
+         |
+    =======
+    """,
+    r"""
+     +---+
+     |   |
+     O   |
+    /|   |
+         |
+         |
+    =======
+    """,
+    r"""
+     +---+
+     |   |
+     O   |
+    /|\  |
+         |
+         |
+    =======
+    """,
+    r"""
+     +---+
+     |   |
+     O   |
+    /|\  |
+    /    |
+         |
+    =======
+    """,
+    r"""
+     +---+
+     |   |
+     O   |
+    /|\  |
+    / \  |
+         |
+    =======
+    """,
+)
 
 
 def choose_word(words: tuple[str, ...] = WORD_LIST) -> str:
@@ -47,6 +112,23 @@ def display_word(word: str, guessed_letters: set[str]) -> str:
     return " ".join(letter if letter in guessed_letters else "_" for letter in word)
 
 
+def display_hangman(lives: int) -> str:
+    """Return the non-graphic gallows artwork for the current lives.
+
+    Args:
+        lives: Number of remaining incorrect guesses.
+
+    Returns:
+        The matching Hangman artwork.
+
+    Raises:
+        ValueError: If lives is outside the supported range.
+    """
+    if not 0 <= lives <= STARTING_LIVES:
+        raise ValueError("Lives must be between zero and the starting lives.")
+    return HANGMAN_STAGES[STARTING_LIVES - lives]
+
+
 def get_guess(guessed_letters: set[str]) -> str:
     """Read and validate one new alphabetic guess from the player.
 
@@ -77,6 +159,7 @@ def play_game() -> None:
     print(f"You have {STARTING_LIVES} lives to guess the word.")
 
     while lives > 0:
+        print(display_hangman(lives))
         current_display = display_word(chosen_word, guessed_letters)
         print(f"\nWord: {current_display}")
         print(f"Lives left: {lives}")
@@ -98,6 +181,7 @@ def play_game() -> None:
             print(f"\nYou win! The word was '{chosen_word}'.")
             return
 
+    print(display_hangman(lives))
     print(f"\nYou lose! The word was '{chosen_word}'.")
 
 
