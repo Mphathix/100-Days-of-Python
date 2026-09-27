@@ -28,6 +28,7 @@ Most of my projects follow along with:
 - [Day 04:](./Day_04) Randomisation and Python Lists
 - [Day 05:](./Day_05) Python Loops and Password Generator
 - [Day 06:](./Day_06) Python Functions and Control Flow
+- [Day 07:](./Day_07) Hangman Game
 - 🔜 More days coming...
 
 ---
@@ -39,4 +40,3 @@ Most of my projects follow along with:
 - Git & GitHub
 
 ---
-
